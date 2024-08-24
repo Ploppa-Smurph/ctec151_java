@@ -28,6 +28,47 @@ Follows standard order of operations:
     3rd: *, /, % (modulus / remainder)
     4th: +, -
 <h3>02.03 Java Variables</h3>
+<b>Numerical</b>
+    - <i>int</i> - non floating point whole number
+
+    - <i>double</i> - standard data type
+    
+    - <i>float</i> - requires an 'f' at the end of the data to confirm it is 'float' data type
+
+<b>Non-Numerical</b>
+    - <i>char</i> - ''  -- single quote for char
+
+    - <i>String</i> - "" -- uses double quotes for String, single quotes for char
+
+    - <i>boolean</i> - can be either true or false, no quotes
+
+<b>Working with more than 1 value type in a program</b>
+ex: <code>
+    int hoursWorked = 41;
+    double payRate = 11.75;
+    double grossPay = hoursWorked * payRate;
+
+    int adjustedPay = (int) grossPay;
+
+    ***output***
+    grossPay = 481.75
+    adjustedPay = 481
+</code>
+the int did not round up, it is truncated (cut off at the decimal) 
+** the 'round' function can round up instead of cutting off those decimals
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
