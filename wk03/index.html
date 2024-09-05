@@ -11,12 +11,36 @@
 <h2>Creating Objects</h2>
 
 <h2>String Class</h2>
+    <strong>String</strong> - 'reference' data type. the RAM points to the correct location of all the data. the variable stores the 'reference address' to the data, not the actual data
+    .equals("data to check"); .equalsIgnoreCase("DATA to CheCk");  -- checks string against another string
+    .length();                      -- the length of the string
+    .charAt(0);                     -- returns the character at a certain location within the string
+    .indexOf("h");                  -- returns the index of a given character
+    .isEmpty();                     -- returns boolean of True or False depending on if the String is empty or not   
+    .upperCase();  .lowerCase();    -- changes string to upperCase or lowerCase
+    .trim();                        -- removes extra space before and after characters
+    .replace('a', 'o');             -- will change all instances of a character and replaces with another, in this example replaces ALL 'a' with 'o'
 
 <h2>Random and Math Classes</h2>
+    <strong>import java.util.Random;</strong>
+    .nextInt(<em>origin</em>0, <em>bound</em>9);                 -- between 0 and 9
+    
+    Math.abs();   -- absolute value
+    Math.ceil();  -- ceiling value - highest roundup??
+    Math.floor(); -- floor value   - does not round, just shows minimum 
 
 <h2>Formatting Output</h2>
 
+
 <h2>Enumerated Types</h2>
+    enums can be set to contain a certain amount of values
+
+    can be created inside or outside of the class
+        - there is a enum that is similar to a class, you can create a new enum class in intelliJ and it will be separated, but accessible through the entire project you are working on
+
+        to use an enum - you use dot notation -- in the class example Mr Turner uses IceCreamFlavors, to get the chocolate flavor you type 'IceCreamFlavors.Chocolate'
+                                                       
+
 
 <h2>Wrapper Classes</h2>
 
@@ -25,6 +49,46 @@
 <h2>Shapes and Colors</h2>
 
 <h2>03 - Review</h2>
+
+<h2>03 - Project "Bad Pizza Party"</h2>
+Bad Pizza Party- (no if/else statements)
+Create a Pizza Party Planner application that asks the user how many pizzas they want to order.  The application should have a size enum that can either be small, medium or large, and should have some variable in the program pre-set to one of these enum values.  
+The pizza joint is really inconsistent, so the application should randomly choose a number from 1 to the amount the user entered for how many pizzas are actually delivered.  The application should then provide a total cost based on the following:
+
+$6 per pizza
+Tax is 10%
+All toppings are free
+The application should then tell the user how many pizzas were actually made, what the pre-selected size of the pizzas is and what the total cost is.  You can use the name() method of your enum to get a string of the selected size.
+
+Better Pizza Party - (for if you're ready to experiment with if/else statements)
+Enums are much more useful when we're able to make decisions based on them and use them to store information.  That's not easily done without if/else statements, so if you're eager to work ahead a bit, here's another option for this assignment.  If you do want to look ahead on if/else statements, they are covered in Chapter 5 of the book.  You can also view a short overview here: W3 Schools - Java ConditionsLinks to an external site.
+
+Overview
+Create a Pizza Party Planner application that asks the user how many pizzas they want to order and what size the pizzas should be.  The application should randomly choose a single pizza topping (or type) for all pizzas.  The application should then provide a total cost based on the following:
+
+small pizzas are $6
+medium pizzas are $10
+large pizzas are $14
+Tax is 10%
+All toppings are free
+The application should then tell the user how many pizzas to order, what size the pizzas are, what toppings the pizzas have, and what the total cost will be.
+
+Requirements
+You don't have to store individual pizza sizes and toppings, it's understood for this problem that all pizzas will be the same size and have the same topping
+Define an enum PizzaSize with values small, medium and large
+Request an amount and convert that amount into an int for the pizza amount
+Utilize the Random class to choose a random topping
+You can do this by mentally assigning each topping a number, and setting the topping based on the randomly generated number
+Calculate the total cost by multiplying the amount times the price for the specific size, then add 10% of that total
+Print out the necessary details for the user
+Hints
+You'll need to import Random from java.util
+You don't need to convert from strings to enum here, you can just compare strings for the size choice and use that to create the related enum using if/else statements
+You can use Integer.parseInt() for integer parsing
+Related Objectives
+CH3 - Parse a string into an integer (ch3) 
+CH3 - Properly utilize a Class or Static Method from an imported library (ch3)(B) 
+CH3 - Properly define and utilize an enum (ch3) (B) 
 
 </pre>
 </body>
