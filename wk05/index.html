@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTEC 151 Advanced Java wk05: Ch05 </title>
+</head>
+<body>
+<pre>
+<h1>CTEC 151 Advanced Java wk05: Ch05 </h1>
+<h2>05.01 - </h2>
+<h2>05.02 - </h2>
+<h2>05.03 - </h2>
+<h2>05 - Review</h2>
+<strong>01) All Java programs start from the main method.</strong>
+    <em>True</em>
+
+<strong>02) The ________________ is the order in which statements are executed.</strong>
+    <em>flow of control</em>
+
+<strong>03) The logical NOT is a _______________ operator.</strong>
+    <em>unary</em>
+
+<strong>04) The logical AND and OR operators are ________________ operators.</strong>
+    <em>binary</em>
+
+<strong>05) If a = true and b = false, then the expression</strong>
+    <code>a || b</code>   -- since a is true; the 'or' opperand only requires one to be true, so it returns true
+    <em>True</em>
+
+<strong>06) The statements within a while loop are continually evaluated until the condition becomes _______________.</strong>
+    <em>File</em>
+
+<strong>07) What is the result of the following code:</strong>
+    <code>int count = 7;
+        while(count <= 5){
+        System.out.print(count);
+        count++;    
+        }
+    </code>
+    <em>Nothing, the loop is never executed because the condition is never evaluated to true</em>
+
+<strong>08) A(n) __________ loop never terminates as the condition is never evaluated to be false.</strong>
+    <em>infinite</em>
+
+<strong>09) A(n) _____________ is an object that allows you to process a collection of items at once.</strong>
+    <em>iterator</em>
+
+<strong>10) A(n) ________________ stores a list of objects.</strong>
+    <em>ArrayList</em>
+
+<strong>11) Consider the following code that will assign a letter grade of 'A', 'B', 'C', 'D', or 'F' depending on a student's test score.</strong>
+    <code>if (score >= 90) grade = 'A';
+        if (score >= 80) grade = 'B';
+        if (score >= 70) grade = 'C';
+        if (score >= 60) grade = 'D';
+        else grade = 'F';</code>
+    <em>This code will work correctly only if the grade is less than 70</em>  --- The problem with this code is that it consists of three if statements 
+    followed by one if-else statement, rather than a nested if-else statement.  So the logic is improper.  If the student's grade falls into the 'A' 
+    category, then all 4 conditions are true and the student winds up with a 'D'.  If the student's grade falls into the 'B' category, then the first condition is false, but the next three are true and the student winds up with a 'D'.  If the student's grade falls into the 'D' category, then the only condition that is true is the one that tests for 'D' and so the grade is assigned correctly.  If the student's grade falls into the 'F' category, then none of the conditions are true and an 'F' is assigned correctly.  So, only if the grade is less than 70 does the code work correctly. ---
+
+<strong>12) Assume that count is 0, total is 20 and max is 1.  The following statement will do which of the following?</strong>
+    <code>if (count != 0 && total / count > max)
+        max = total / count;
+    </code>
+    <em>The condition short circuits and the assignment statment is not executed</em>
+
+<strong>13) What is wrong, logically, with the following code?</strong>
+    <code>if (x > 10)
+        System.out.println("Large");
+        else if (x > 6 && x <= 10)
+           System.out.println("Medium");
+           else if (x > 3 && x <= 6)
+               System.out.println("Small");
+              else
+                 System.out.println("Very small");</code>
+    <em>There is no logical error, but there is no need to have (x <= 10) in the second conditional or (x <= 6) in the third conditional</em>
+
+<strong>14) Consider the following outline of a nested if-else structure which has more if clauses than else clauses.  Which of the statements below is true regarding this structure?</strong>
+    <em>statement 2 will only execute if condition1 is true and condition2 is false.</em>   --- The else clause must be matched to the most recent if statement.  Therefore, the else goes with 
+    the if statement that tests condition2, not the if statement that tests condition1.  So, if condition1 is true and condition2 is false, then statement2 will execute  ---
+
+<strong>15) Assume that x and y are int variables with x = 5, y = 3, and a and d are char variables with a = 'a' and d = 'A', and examine the following conditions:</strong>
+    <code>Condition 1:  (x < y && x > 0)
+
+        Condition 2:  (a != d || x != 5)
+        
+        Condition 3:  !(true && false)
+        
+        Condition 4:  (x > y || a == 'A' || d != 'A')</code>
+    <em>Conditions 2, 3,4 are all true, Conditions 1 is not</em>
+
+<strong>16) As in the other members of the C family of languages (C, C++, C#), Java interprets a zero value as false and a non-zero value as true.</strong>
+    <em>False</em>
+
+<strong>17) In Java, the symbol "=" and the symbol "==" are used synonymously (interchangeably).</strong>
+    <em>False</em>
+
+<strong>18) The statement {} is a legal block</strong>
+    <em>True</em>
+
+<strong>19) An if statement may or may not have an else clause, but an else clause must be part of an if statement.</strong>
+    <em>True</em>
+
+<strong>20) In order to compare int, float and double variables, you can use <, >, ==, !=, <=, >=, but to compare char and String variables, you must use compareTo(), equals()and equalsIgnoreCase().</strong>
+    <em>False</em>
+</pre>
+</body>
+</html>
