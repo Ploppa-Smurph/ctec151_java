@@ -9,8 +9,29 @@
 <pre>
 <h1>CTEC 151 Java wk12 Ch12: </h1>
 <h2>12.01 - Recursive Thinking</h2>
+    <strong>Recursive Method</strong> - method that calls itself
+        ++ can be more 'elegant' -- eaiser to read, easier to understand, and avoids some side-effects
+
+        -- often slower than imperative code
+            ** can cause 'StackOverflow' error
+
+    <strong>Recursive Depth</strong> - how many times a method calls itself
+    <strong>Base Case</strong> - scenario in which the problem can be solved without recursion
+    <strong>Recursive Case</strong> - scenario that you use recursion to solve the problem
+    <strong>Direct Recursion</strong> - Recursion in which a method directly calls itself
+    <strong>Inderect Recursion</strong> - recursion in which a chain of 2 or more methods calls returns to the method that originated the chain
+        -- ex: method A calls method B & method B then calls method A
+
+    <strong>3 Questions for Recursive Solutions</strong>
+        <em>01) Base-Case question - is there a non-recursive way to solve?</em>
+        <em>02) Smaller-Caller question - does every recursive call move toward base-case?</em>
+        <em>03) General-Case question - does it do what you want it to?</em>
+
+    <strong>Factorials</strong> - every number up to a number, including itself, multiplied by a number and added together. 
+        <em>n!</em> - is the symbol to denote a factorial in math
 
 <h2>12.02 - Recursive Programming & Accumulators</h2>
+
 
 <h2>12.03 - Traversing a Maze</h2>
 
@@ -19,66 +40,43 @@
 <h2>12.05 - Tiled Images</h2>
 
 <h2>12 - Review</h2>
-<strong>01) </strong>
-    <em></em>
+<strong>01) ________________ is a programming technique in which a method calls itself in order to fulfill its purpose.</strong>
+    <em>Recursion</em>
 
-<strong>02) </strong>
-    <em></em>
+<strong>02) Without a ____ case, the recursion will never end. This is called ____ recursion.</strong>
+    <em>base, infinite</em>
 
-<strong>03) </strong>
-    <em></em>
+<strong>03) True or False: Recursion is always the best solution to a problem.</strong>
+    <em>False</em>
 
-<strong>04) </strong>
-    <em></em>
+<strong>04) ___________________ recursion is when a method invokes another method and that method eventually invokes the original calling method.</strong>
+    <em>Indirect</em>
 
-<strong>05) </strong>
-    <em></em>
+<strong>05) Since iterative solutions often use loop variables and recursive solutions do not, the recursive solution is usually more memory efficient (uses less memory) than the equivalent iterative solution.</strong>
+    <em>False</em>
 
-<strong>06) </strong>
-    <em></em>
+<strong>06) It always is possible to replace a recursion by an iteration and vice versa.</strong>
+    <em>True</em>
 
-<strong>07) </strong>
-    <em></em>
+<strong>07) A recursive algorithm is superior to an iterative algorithm along which of the following criteria?</strong>
+    <em>Recursion is more elegant</em>
 
-<strong>08) </strong>
-    <em></em>
+<strong>08) What can be said about the difference or similarity, if any, between an infinite loop and an infinite
+    recursion?</strong>
+    <em>Both continue to repeat indefinitely</em>
 
-<strong>09) </strong>
-    <em></em>
+<strong>09) Define the magnitude of a number as the location of the decimal point from the left of the number (that
+    is, if a number has 4 digits followed by the decimal point, it will have a magnitude of 4). 100 would
+    then have a magnitude of 3 and 55,555.555 would have a magnitude of 5. A partial recursive method
+    is given below to compute a positive int parameter's magnitude. Which answer below is needed to
+    complete the method?</strong>
+        <code>public int magnitude(double x)
+            {
+                if (x < 1) return 0;
+                else return _______;
+            }</code>
+    <em>magnitude(x / 10) + 1;</em>
 
-<strong>10) </strong>
-    <em></em>
-
-<strong>11) </strong>
-    <em></em>
-
-<strong>12) </strong>
-    <em></em>
-
-<strong>13) </strong>
-    <em></em>
-
-<strong>14) </strong>
-    <em></em>
-
-<strong>15) </strong>
-    <em></em>
-
-<strong>16) </strong>
-    <em></em>
-
-<strong>17) </strong>
-    <em></em>
-
-<strong>18) </strong>
-    <em></em>
-
-<strong>19) </strong>
-    <em></em>
-
-<strong>20) </strong>
-    <em></em>
-    
 </pre>
 </body>
 </html>
